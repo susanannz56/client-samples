@@ -13,7 +13,7 @@ public class HelloFXML extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        AnchorPane root = FXMLLoader.load(HelloFXML.class.getResource("hello.fxml"),
+        View root = FXMLLoader.load(HelloFXML.class.getResource("hello.fxml"),
                 ResourceBundle.getBundle("hellofx.hello"));
         Scene scene = new Scene(root, 640, 480);
         stage.setScene(scene);
